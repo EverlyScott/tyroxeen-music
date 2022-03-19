@@ -1,0 +1,29 @@
+export default interface YouTubeFeed {
+  status: 'ok'
+  feed: {
+    url: string
+    title: string
+    link: string
+    author: string
+    description: string
+    image: string
+  }
+  items: Item[]
+}
+
+export interface Item {
+  title: string
+  pubDate: string
+  link: string
+  guid: string
+  author: string
+  thumbnail: string
+  description: string
+  content: string
+  enclosure: {
+    link: string
+    type: string
+    thumbnail: string
+  }
+  categories: string[]
+}

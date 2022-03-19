@@ -1,0 +1,19 @@
+@keyframes enableHeaderBackground {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  to {
+    background-color: rgba(0, 0, 0, .5);
+  }
+}
+
+@keyframes disableHeaderBackground {
+  from {
+    background-color: rgba(0 ,0, 0, .5);
+  }
+
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
