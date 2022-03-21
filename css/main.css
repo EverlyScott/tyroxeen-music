@@ -133,39 +133,39 @@ body {
   margin-bottom: 24px;
 }
 
-.more .section {
+.more section {
   margin: 106px 14px 0 14px;
 }
 
-.more .section h3 {
+.more section h2 {
   margin: 0 0 18.75px 0;
 }
 
-.more .section p {
+.more section p {
   margin: 0;
   display: inline-block;
   max-width: 1600px;
 }
 
-.more .section iframe {
+.more section iframe {
   border: none;
   border-radius: 10px;
 }
 
 @media (max-width: 882px) {
-  .more .section iframe#youtubeembed, .more .section iframe#youtubelatestembed {
+  .more section iframe#youtubeembed, .more section iframe#youtubelatestembed {
     width: calc(100vw - 56px);
     height: calc(calc(100vw - 56px) / 1.777777777777778);
   }
 }
 
 @media (max-width: 628px) {
-  .more .section iframe#spotifyembed {
+  .more section iframe#spotifyembed {
     width: 100%;
   }
 }
 
-.more .section#socials .social {
+.more section#socials .social {
   font-size: 45px;
   color: #ffffff;
   margin: 0 4px;
