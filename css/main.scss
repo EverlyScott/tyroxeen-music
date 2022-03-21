@@ -19,7 +19,7 @@ body {
   font-family: arial;
 }
 
-.header {
+.topbar {
   font-family: "Mom's Typewriter";
   text-shadow: 0 0 5px #000000;
   color: #ffffff;
@@ -63,7 +63,7 @@ body {
   }
 }
 
-.main {
+header {
   position: relative;
   background-image: url("../assets/img/somewhere_far_away_cover_full.jpg");
   background-size: cover;
@@ -108,7 +108,7 @@ body {
   }
 }
 
-.more {
+main {
   width: 100%;
   min-height: calc(100vh - (var(--headerSize) + 51px));
   margin-top: calc(var(--headerSize) + 51px);

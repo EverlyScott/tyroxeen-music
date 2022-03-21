@@ -19,7 +19,7 @@ body {
   font-family: arial;
 }
 
-.header {
+.topbar {
   font-family: "Mom's Typewriter";
   text-shadow: 0 0 5px #000000;
   color: #ffffff;
@@ -35,29 +35,29 @@ body {
   transition: background-color 500ms;
 }
 
-.header h1 span {
+.topbar h1 span {
   vertical-align: 18px;
 }
 
-.header.background {
+.topbar.background {
   pointer-events: all;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.header.background h1 {
+.topbar.background h1 {
   pointer-events: all;
 }
 
-.header.nobackground {
+.topbar.nobackground {
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0);
 }
 
-.header.nobackground h1 {
+.topbar.nobackground h1 {
   pointer-events: none;
 }
 
-.header h1 {
+.topbar h1 {
   pointer-events: none;
   margin: 0;
   font-weight: normal;
@@ -67,7 +67,7 @@ body {
           user-select: none;
 }
 
-.main {
+header {
   position: relative;
   background-image: url("../assets/img/somewhere_far_away_cover_full.jpg");
   background-size: cover;
@@ -79,7 +79,7 @@ body {
 }
 
 @media (max-width: 1060px) {
-  .main {
+  header {
     background-attachment: initial;
     background-image: url("../assets/img/somewhere_far_away_cover_mobile.jpg");
     background-size: cover;
@@ -87,7 +87,7 @@ body {
   }
 }
 
-.main .scrollBtnContainer {
+header .scrollBtnContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +99,7 @@ body {
   bottom: 14px;
 }
 
-.main .scrollBtnContainer .scrollBtn {
+header .scrollBtnContainer .scrollBtn {
   cursor: pointer;
   border-radius: 100%;
   border: 2px solid #000000;
@@ -120,12 +120,12 @@ body {
   transition: opacity 500ms;
 }
 
-.main .scrollBtnContainer .scrollBtn.hidden {
+header .scrollBtnContainer .scrollBtn.hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.more {
+main {
   width: 100%;
   min-height: calc(100vh - (var(--headerSize) + 51px));
   margin-top: calc(var(--headerSize) + 51px);
@@ -133,39 +133,39 @@ body {
   margin-bottom: 24px;
 }
 
-.more section {
+main section {
   margin: 106px 14px 0 14px;
 }
 
-.more section h2 {
+main section h2 {
   margin: 0 0 18.75px 0;
 }
 
-.more section p {
+main section p {
   margin: 0;
   display: inline-block;
   max-width: 1600px;
 }
 
-.more section iframe {
+main section iframe {
   border: none;
   border-radius: 10px;
 }
 
 @media (max-width: 882px) {
-  .more section iframe#youtubeembed, .more section iframe#youtubelatestembed {
+  main section iframe#youtubeembed, main section iframe#youtubelatestembed {
     width: calc(100vw - 56px);
     height: calc(calc(100vw - 56px) / 1.777777777777778);
   }
 }
 
 @media (max-width: 628px) {
-  .more section iframe#spotifyembed {
+  main section iframe#spotifyembed {
     width: 100%;
   }
 }
 
-.more section#socials .social {
+main section#socials .social {
   font-size: 45px;
   color: #ffffff;
   margin: 0 4px;

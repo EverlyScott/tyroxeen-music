@@ -1,7 +1,7 @@
-const header = document.querySelector(".header");
-const moreElement = <HTMLElement>document.querySelector(".more");
+const header = document.querySelector(".topbar");
+const moreElement = <HTMLElement>document.querySelector("main");
 const scrollBtn = <HTMLDivElement>document.getElementById("scrollBtn");
-const main = <HTMLDivElement>document.querySelector(".main");
+const main = <HTMLDivElement>document.querySelector("header");
 
 export default class ScrollManager {
   constructor() {
