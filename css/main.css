@@ -167,7 +167,7 @@ main section iframe {
 
 main section#socials .social {
   font-size: 45px;
-  color: #ffffff;
+  color: #000000;
   margin: 0 4px;
   -webkit-filter: invert(1);
           filter: invert(1);
