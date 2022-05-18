@@ -14,8 +14,8 @@
 
 body {
   margin: 0;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   font-family: arial;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .topbar.background {
   pointer-events: all;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .topbar.background h1 {
@@ -69,7 +69,7 @@ body {
 
 header {
   position: relative;
-  background-image: url("../assets/img/somewhere_far_away_cover_full.jpg");
+  background-image: url("../assets/img/the_last_night_cover_full.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0;
@@ -81,7 +81,7 @@ header {
 @media (max-width: 1060px) {
   header {
     background-attachment: initial;
-    background-image: url("../assets/img/somewhere_far_away_cover_mobile.jpg");
+    background-image: url("../assets/img/the_last_night_cover_mobile.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -102,7 +102,7 @@ header .scrollBtnContainer {
 header .scrollBtnContainer .scrollBtn {
   cursor: pointer;
   border-radius: 100%;
-  border: 2px solid #000000;
+  border: 2px solid #ffffff;
   width: 42.5px;
   height: 42.5px;
   font-size: 1.8rem;
@@ -128,7 +128,7 @@ header .scrollBtnContainer .scrollBtn.hidden {
 main {
   width: 100%;
   min-height: calc(100vh - (var(--headerSize) + 51px));
-  margin-top: calc(var(--headerSize) + 51px);
+  padding-top: calc(var(--headerSize) + 51px);
   text-align: center;
   margin-bottom: 24px;
 }
