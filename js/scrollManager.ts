@@ -4,7 +4,7 @@ const scrollBtn = <HTMLDivElement>document.getElementById("scrollBtn");
 const main = <HTMLDivElement>document.querySelector("header");
 
 export default class ScrollManager {
-  constructor() {
+  constructor(scrollOffset: number) {
     document.addEventListener("scroll", (evt) => {
       const scrollPos = document.documentElement.scrollTop;
       if (scrollPos > window.innerHeight) {
@@ -15,8 +15,8 @@ export default class ScrollManager {
         header.classList.add("nobackground");
       }
 
-      if (scrollPos >= 195 && !window.matchMedia("(max-width: 1060px)").matches) {
-        main.style.backgroundPosition = "center -" + (scrollPos - 195).toString() + "px";
+      if (scrollPos >= scrollOffset && !window.matchMedia("(max-width: 1060px)").matches) {
+        main.style.backgroundPosition = "center -" + (scrollPos - scrollOffset).toString() + "px";
         scrollBtn.classList.add("hidden");
       } else if (!window.matchMedia("(max-width: 1060px)").matches) {
         main.style.backgroundPosition = "center 0";
@@ -26,7 +26,7 @@ export default class ScrollManager {
 
     scrollBtn.addEventListener("click", () => {
       document.documentElement.scrollTo({
-        top: moreElement.offsetTop - 100,
+        top: moreElement.offsetTop + 150,
         behavior: "smooth",
       });
     });
