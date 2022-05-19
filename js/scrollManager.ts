@@ -31,7 +31,7 @@ export default class ScrollManager {
 
     scrollBtn.addEventListener("click", () => {
       document.documentElement.scrollTo({
-        top: moreElement.offsetTop + 150,
+        top: moreElement.offsetTop + 50,
         behavior: "smooth",
       });
     });

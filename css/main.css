@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
 @font-face {
   font-family: "Mom's Typewriter";
   src: url("../assets/fonts/moms_typewriter.ttf");
@@ -16,7 +17,7 @@ body {
   margin: 0;
   background-color: #000000;
   color: #ffffff;
-  font-family: arial;
+  font-family: "M PLUS Rounded 1c", arial;
 }
 
 .topbar {
@@ -35,6 +36,21 @@ body {
   transition: background-color 500ms;
 }
 
+.topbar::after {
+  display: block;
+  height: 20px;
+  width: 100vw;
+  content: "";
+  position: relative;
+  right: 14px;
+  top: 20.5px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
 .topbar h1 span {
   vertical-align: 18px;
 }
@@ -42,6 +58,10 @@ body {
 .topbar.background {
   pointer-events: all;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.topbar.background::after {
+  opacity: 1;
 }
 
 .topbar.background h1 {
@@ -134,7 +154,7 @@ main {
 }
 
 main section {
-  margin: 106px 14px 0 14px;
+  margin: 0 14px 0 14px;
 }
 
 main section h2 {
