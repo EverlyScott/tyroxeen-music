@@ -15,8 +15,13 @@ export default class ScrollManager {
         header.classList.add("nobackground");
       }
 
-      if (scrollPos >= scrollOffset && !window.matchMedia("(max-width: 1060px)").matches) {
-        main.style.backgroundPosition = "center -" + (scrollPos - scrollOffset).toString() + "px";
+      console.log((scrollOffset / 1000) * window.innerHeight);
+      if (
+        scrollPos >= (scrollOffset / 1000) * window.innerHeight &&
+        !window.matchMedia("(max-width: 1060px)").matches
+      ) {
+        main.style.backgroundPosition =
+          "center -" + (scrollPos - (scrollOffset / 1000) * window.innerHeight).toString() + "px";
         scrollBtn.classList.add("hidden");
       } else if (!window.matchMedia("(max-width: 1060px)").matches) {
         main.style.backgroundPosition = "center 0";
