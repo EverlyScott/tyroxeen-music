@@ -140,6 +140,16 @@ main {
   background-size: cover;
   background-position: center;
 
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: -116px;
+    width: 100vw;
+    height: 5px;
+    background: linear-gradient(0deg, rgba($headerColor, 0.5), rgba($headerColor, 0));
+  }
+
   section {
     margin: 0 14px 0 14px;
 

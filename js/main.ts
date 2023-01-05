@@ -10,4 +10,4 @@ new YouTubeLatestEmbed(
   "#youtubelatestembed",
   "https://www.youtube.com/feeds/videos.xml?channel_id=UCE2kTOrZwClF2VtJEvG0a6Q"
 );
-new ScrollManager(300);
+new ScrollManager(100);
