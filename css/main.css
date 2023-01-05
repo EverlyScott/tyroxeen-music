@@ -42,14 +42,14 @@ body {
   top: -3.5px;
   opacity: 0;
   transition: opacity 500ms;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
 .topbar h1 span {
   vertical-align: 18px;
 }
 .topbar.background {
   pointer-events: all;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .topbar.background::after {
   opacity: 1;
@@ -137,7 +137,7 @@ main::before {
   top: -116px;
   width: 100vw;
   height: 5px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
 main section {
   margin: 0 14px 0 14px;
