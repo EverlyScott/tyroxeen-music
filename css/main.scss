@@ -88,12 +88,13 @@ header {
   background-image: url("../assets/img/have_fun_cover_full.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position-x: center;
+  background-position-y: center;
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
 
-  @media (max-width: 1060px) {
+  @media (max-width: 850px) {
     background-attachment: initial;
     background-image: url("../assets/img/have_fun_cover_mobile.jpg");
     background-size: cover;
@@ -154,11 +155,10 @@ main {
     margin: 0 14px 0 14px;
 
     h2 {
-      margin: 0 0 18.75px 0;
+      margin: 26px 0 15px 0;
     }
 
     p {
-      margin: 0;
       display: inline-block;
       max-width: 1600px;
     }
@@ -195,4 +195,5 @@ main {
 .lemarshall {
   font-family: "Le Marshall";
   font-size: 2.3rem;
+  line-height: 1.2;
 }
