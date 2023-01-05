@@ -3,39 +3,35 @@
   font-family: "Mom's Typewriter";
   src: url("../assets/fonts/moms_typewriter.ttf");
 }
-
 @font-face {
   font-family: "Le Marshall";
   src: url("../assets/fonts/le_marshall.otf");
 }
-
 :root {
-  --headerSize: 92px;
+  --headerSize: 60px;
 }
 
 body {
   margin: 0;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   font-family: "M PLUS Rounded 1c", arial;
 }
 
 .topbar {
   font-family: "Mom's Typewriter";
-  text-shadow: 0 0 5px #000000;
+  text-shadow: 0 0 8px #000000;
   color: #ffffff;
   pointer-events: none;
   z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 14px 0 0 14px;
+  padding: 4px 0 0 14px;
   width: calc(100% - 14px);
   height: var(--headerSize);
-  -webkit-transition: background-color 500ms;
   transition: background-color 500ms;
 }
-
 .topbar::after {
   display: block;
   height: 20px;
@@ -43,40 +39,31 @@ body {
   content: "";
   position: relative;
   right: 14px;
-  top: 20.5px;
+  top: -3.5px;
   opacity: 0;
-  -webkit-transition: opacity 500ms;
   transition: opacity 500ms;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
-
 .topbar h1 span {
   vertical-align: 18px;
 }
-
 .topbar.background {
   pointer-events: all;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .topbar.background::after {
   opacity: 1;
 }
-
 .topbar.background h1 {
   pointer-events: all;
 }
-
 .topbar.nobackground {
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0);
 }
-
 .topbar.nobackground h1 {
   pointer-events: none;
 }
-
 .topbar h1 {
   pointer-events: none;
   margin: 0;
@@ -89,7 +76,7 @@ body {
 
 header {
   position: relative;
-  background-image: url("../assets/img/the_last_night_cover_full.jpg");
+  background-image: url("../assets/img/have_fun_cover_full.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0;
@@ -97,49 +84,35 @@ header {
   width: 100%;
   height: 100vh;
 }
-
 @media (max-width: 1060px) {
   header {
     background-attachment: initial;
-    background-image: url("../assets/img/the_last_night_cover_mobile.jpg");
+    background-image: url("../assets/img/have_fun_cover_mobile.jpg");
     background-size: cover;
     background-position: center;
   }
 }
-
 header .scrollBtnContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 100%;
   position: absolute;
-  bottom: 14px;
+  bottom: 10px;
 }
-
 header .scrollBtnContainer .scrollBtn {
   cursor: pointer;
   border-radius: 100%;
-  border: 2px solid #ffffff;
+  border: 2px solid #000000;
+  color: #000000;
   width: 42.5px;
   height: 42.5px;
   font-size: 1.8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   opacity: 1;
-  -webkit-transition: opacity 500ms;
   transition: opacity 500ms;
 }
-
 header .scrollBtnContainer .scrollBtn.hidden {
   opacity: 0;
   pointer-events: none;
@@ -151,50 +124,44 @@ main {
   padding-top: calc(var(--headerSize) + 51px);
   text-align: center;
   margin-bottom: 24px;
+  background-image: url("/assets/img/paper_background.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
 }
-
 main section {
   margin: 0 14px 0 14px;
 }
-
 main section h2 {
   margin: 0 0 18.75px 0;
 }
-
 main section p {
   margin: 0;
   display: inline-block;
   max-width: 1600px;
 }
-
 main section iframe {
   border: none;
   border-radius: 10px;
 }
-
 @media (max-width: 882px) {
   main section iframe#youtubeembed, main section iframe#youtubelatestembed {
     width: calc(100vw - 56px);
-    height: calc(calc(100vw - 56px) / 1.777777777777778);
+    height: calc((100vw - 56px) / 1.7777777778);
   }
 }
-
 @media (max-width: 628px) {
   main section iframe#spotifyembed {
     width: 100%;
   }
 }
-
 main section#socials .social {
   font-size: 45px;
   color: #000000;
   margin: 0 4px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 
 .lemarshall {
   font-family: "Le Marshall";
   font-size: 2.3rem;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
