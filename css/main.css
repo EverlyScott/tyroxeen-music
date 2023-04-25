@@ -70,13 +70,12 @@ body {
   font-weight: normal;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
 header {
   position: relative;
-  background-image: url("../assets/img/have_fun_cover_full.jpg");
+  background-image: url("../assets/img/superficial_cover_full.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -88,9 +87,9 @@ header {
 @media (max-width: 850px) {
   header {
     background-attachment: initial;
-    background-image: url("../assets/img/have_fun_cover_mobile.jpg");
+    background-image: url("../assets/img/superficial_cover_mobile.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
   }
 }
 header .scrollBtnContainer {
@@ -98,15 +97,15 @@ header .scrollBtnContainer {
   justify-content: center;
   width: 100%;
   position: absolute;
-  bottom: 10px;
+  bottom: 1vh;
 }
 header .scrollBtnContainer .scrollBtn {
   cursor: pointer;
   border-radius: 100%;
   border: 2px solid #000000;
   color: #000000;
-  width: 42.5px;
-  height: 42.5px;
+  height: 4vh;
+  aspect-ratio: 1;
   font-size: 1.8rem;
   display: flex;
   align-items: center;

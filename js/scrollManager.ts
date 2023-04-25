@@ -24,7 +24,7 @@ export default class ScrollManager {
           "center -" + (scrollPos - (scrollOffset / 1000) * window.innerHeight).toString() + "px";
         scrollBtn.classList.add("hidden");
       } else if (!window.matchMedia("(max-width: 1060px)").matches) {
-        main.style.backgroundPosition = "center 0";
+        main.style.backgroundPosition = "center center";
         scrollBtn.classList.remove("hidden");
       }
     });
